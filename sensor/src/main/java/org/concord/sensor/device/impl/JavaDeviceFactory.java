@@ -149,8 +149,10 @@ public class JavaDeviceFactory extends JavaDeviceService
 			case DATA_HARVEST_CF:
 			case IMAGIWORKS_SERIAL:
 			case IMAGIWORKS_SD:
-			case COACH:
 				device = null;
+				break;
+			case COACH:
+				className = "org.concord.sensor.coach.CoachSensorDevice";
 				break;
 				
 			// TODO: need to handle config string so
