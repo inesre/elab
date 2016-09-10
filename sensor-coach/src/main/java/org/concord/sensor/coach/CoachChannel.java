@@ -63,7 +63,7 @@ public class CoachChannel {
 		// If the sensor was not detected before or was changed, the new one
 		// will be connected
 		if (sensor == null || library.connect(channelKind, channel, true, true, true, sensor.getUID()) != 0) {
-			System.out.println("me caí");
+			
 			if (detectSensor() == null)
 				return -1;
 			return library.connect(channelKind, channel, true, true, true, sensor.getUID());
